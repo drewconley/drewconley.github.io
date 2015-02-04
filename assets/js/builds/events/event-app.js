@@ -46,13 +46,23 @@ var EventData = require('./datastore');
 
 var Event = React.createClass({displayName: "Event",
     mixins:[Router.State],
+
+    getEvent: function() {
+        var self = this;
+        var event = EventData.get('events').filter(function(d) {
+            return d.id == self.getParams().eventId;
+        });
+
+        if (event.length) {
+            return event[0];
+        } else {
+            return null;
+        }
+    },
     render: function() {
-
-        // console.log(EventData.get('events'))
-        // console.log('asdasd', this.getParams().eventId)
-
-        var id = this.getParams().eventId;
-        return (React.createElement("div", null, "Markup for event ", id))
+        var event = this.getEvent();
+        
+        return (React.createElement("div", null, "Markup for event ", event))
     }
 });
 
