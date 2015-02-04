@@ -42,10 +42,15 @@ module.exports = EventData;
 },{"../../../utilities/_datastore":216,"jquery":10}],3:[function(require,module,exports){
 var React = require('react/addons');
 var Router = require('react-router');
+var EventData = require('./datastore');
 
 var Event = React.createClass({displayName: "Event",
     mixins:[Router.State],
     render: function() {
+
+        // console.log(EventData.get('events'))
+        // console.log('asdasd', this.getParams().eventId)
+
         var id = this.getParams().eventId;
         return (React.createElement("div", null, "Markup for event ", id))
     }
@@ -53,7 +58,7 @@ var Event = React.createClass({displayName: "Event",
 
 module.exports = Event;
 
-},{"react-router":20,"react/addons":54}],4:[function(require,module,exports){
+},{"./datastore":2,"react-router":20,"react/addons":54}],4:[function(require,module,exports){
 var React = require('react/addons');
 var Router = require('react-router');
 
@@ -98,6 +103,7 @@ var Index = React.createClass({displayName: "Index",
         var self = this;
         $.get('/data/dataset-events.json', function(d) {
             self.setState({events:d});
+            EventData.set('events', d);
         });
     },
 
