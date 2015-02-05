@@ -43,32 +43,50 @@ module.exports = EventData;
 var React = require('react/addons');
 var Router = require('react-router');
 var EventData = require('./datastore');
+var $ = require('jquery');
 
 var Event = React.createClass({displayName: "Event",
     mixins:[Router.State],
 
-    getEvent: function() {
-        var self = this;
-        var event = EventData.get('events').filter(function(d) {
-            return d.id == self.getParams().eventId;
-        });
-
-        if (event.length) {
-            return event[0];
-        } else {
-            return null;
+    getInitialState: function() {
+        return {
+            event:{}
         }
     },
+
+    componentWillMount: function() {
+        var self = this;
+        //Index will fetch the data first, so update myself when that stuff arrives
+        EventData.listen('events', function() {
+            self.setMyEvent();
+        });
+    },
+
+    componentWillReceiveProps: function() {
+        //This component receives props when moving from event to event
+        this.setMyEvent();
+    },
+
+    setMyEvent: function() {
+        var self = this;
+        if (EventData.get('events')) {
+            var event = EventData.get('events').filter(function(d) {
+                return d.id == self.getParams().eventId;
+            });
+            if (event.length) {
+                self.setState({event:event[0] })
+            }
+        };
+    },
+
     render: function() {
-        var event = this.getEvent();
-        
-        return (React.createElement("div", null, "Markup for event ", event))
+        return (React.createElement("div", null, "Markup for event ", this.state.event))
     }
 });
 
 module.exports = Event;
 
-},{"./datastore":2,"react-router":20,"react/addons":54}],4:[function(require,module,exports){
+},{"./datastore":2,"jquery":10,"react-router":20,"react/addons":54}],4:[function(require,module,exports){
 var React = require('react/addons');
 var Router = require('react-router');
 
