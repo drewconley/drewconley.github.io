@@ -102,7 +102,7 @@ var IndexListing = React.createClass({displayName: "IndexListing",
 
         return (
             React.createElement(Link, {style: listingStyle, to: "event", params: {eventId: this.props.event.id}}, 
-                this.props.event.date, " @ ", this.props.event.venue.name
+                this.props.event.datetime, " @ ", this.props.event.venue
             )
         )
     }
