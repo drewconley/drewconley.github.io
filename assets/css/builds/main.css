@@ -322,7 +322,7 @@ td, th {
 * {
   box-sizing: border-box; }
 
-html, body {
+html, body, .app {
   height: 100%; }
 
 body {
@@ -384,17 +384,19 @@ a.listing {
   background: #919191; }
   a.listing:not(:last-of-type) {
     border-bottom: 4px solid #7a7a7a; }
+  a.listing.active {
+    background: #fff; }
 
 .venue-box {
   /* dimensions: 815x315 ish */
-  background-image: url(http://localhost:8000/offbroadway.jpg);
-  /*need better img file */
   background-position: center;
   height: 315px;
   background-size: cover;
   background-repeat: none;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: table;
+  width: 100%; }
   .venue-box:after {
     content: '';
     position: absolute;
