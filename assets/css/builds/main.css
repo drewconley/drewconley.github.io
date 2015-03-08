@@ -378,12 +378,11 @@ body {
   background: #494949;
   color: #ffffff; }
 
-.listing {
-  /* see also the inline styles */
+a.listing {
   display: block;
+  padding: 1em;
   background: #919191; }
-  .listing.border {
-    /* this rule placed by jsx loop */
+  a.listing:not(:last-of-type) {
     border-bottom: 4px solid #7a7a7a; }
 
 .venue-box {
