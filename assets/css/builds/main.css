@@ -372,6 +372,22 @@ body {
     -ms-flex-positive: 1;
     flex-grow: 1; }
 
+/* mobile layout */
+@media (max-width: 700px) {
+  /* --- Concept: Mobile display logic --- */
+  .container {
+    display: block; }
+  .col.col-main, .col.col-sidebar {
+    width: 100%; }
+  .col.col-sidebar {
+    display: block; }
+  .col.col-main {
+    display: none; }
+  body.eventDetailsPage .col.col-main {
+    display: block; }
+  body.eventDetailsPage .col.col-sidebar {
+    display: none; } }
+
 .listing-group-heading {
   font-size: 1.1em;
   padding: 1.1em 1em;
