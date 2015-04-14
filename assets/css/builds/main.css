@@ -329,7 +329,7 @@ body {
   color: #333333;
   font-size: 16px; }
 
-.header {
+.site-header {
   height: 60px;
   background: #d8d8d8;
   border-bottom: 3px solid #7a7a7a;
@@ -388,6 +388,13 @@ body {
   body.eventDetailsPage .col.col-sidebar {
     display: none; } }
 
+/* Mobile-Only stuff */
+.mobile-only {
+  display: none; }
+  @media (max-width: 700px) {
+    .mobile-only {
+      display: block; } }
+
 .listing-group-heading {
   font-size: 1.1em;
   padding: 1.1em 1em;
@@ -397,11 +404,13 @@ body {
 a.listing {
   display: block;
   padding: 1em;
+  color: #c6c6c6;
+  text-decoration: none;
   background: #919191; }
   a.listing:not(:last-of-type) {
     border-bottom: 4px solid #7a7a7a; }
   a.listing.active {
-    background: #fff; }
+    color: #fff; }
 
 .venue-box {
   /* dimensions: 815x315 ish */
