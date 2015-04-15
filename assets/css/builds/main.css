@@ -421,8 +421,9 @@ a.listing {
 
 .venue-box {
   /* dimensions: 815x315 ish */
+  /* Update: design calls for 245px-ish height, but I'm changing it */
   background-position: center;
-  height: 315px;
+  height: 260px;
   background-size: cover;
   background-repeat: none;
   position: relative;
@@ -436,8 +437,7 @@ a.listing {
     right: 0;
     width: 0;
     height: 0;
-    /* 100:1000 ratio */
-    border-bottom: 200px solid #141C28;
+    border-bottom: 150px solid #141C28;
     border-right: 2000px solid transparent; }
 
 div.artist {
