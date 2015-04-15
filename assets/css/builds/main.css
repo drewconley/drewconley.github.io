@@ -328,7 +328,8 @@ html, body, .app {
 body {
   color: #333333;
   font-size: 16px;
-  background: #0B121C; }
+  background: #141C28;
+  font-family: 'Lato', sans-serif; }
 
 .site-header {
   height: 60px;
@@ -397,10 +398,12 @@ body {
       display: block; } }
 
 .listing-group-heading {
-  font-size: 1.1em;
-  padding: 1.1em 1em;
+  font-size: 0.9em;
+  letter-spacing: 0.07em;
+  padding: 15px 1em 13px;
   background: #293C59;
-  color: #5F708A; }
+  color: #5F708A;
+  text-transform: uppercase; }
 
 a.listing {
   display: block;
@@ -431,7 +434,7 @@ a.listing {
     width: 0;
     height: 0;
     /* 100:1000 ratio */
-    border-bottom: 200px solid #0B121C;
+    border-bottom: 200px solid #141C28;
     border-right: 2000px solid transparent; }
 
 div.artist {
