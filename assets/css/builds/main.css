@@ -364,7 +364,7 @@ body {
   .col.col-sidebar {
     min-width: 300px;
     width: 20%;
-    box-shadow: 1px 0px 9px 0px rgba(6, 16, 48, 0.4);
+    box-shadow: 3px 0px 4px 0px #111B29;
     position: relative;
     z-index: 4; }
   .col.col-main {
