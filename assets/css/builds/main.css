@@ -415,6 +415,8 @@ a.listing {
     border-bottom: 4px solid #1F2C3E; }
   a.listing.active {
     color: #fff; }
+  a.listing:hover:not(.active) {
+    background: #1f2c3e; }
 
 .venue-box {
   /* dimensions: 815x315 ish */
