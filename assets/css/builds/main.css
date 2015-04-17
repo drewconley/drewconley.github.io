@@ -508,3 +508,10 @@ div.artist {
       height: 12px;
       z-index: 3;
       cursor: pointer; }
+
+/* push header styles */
+.css-hidden-heading {
+  height: 0;
+  overflow: hidden;
+  padding: 0 !important;
+  border: 0 !important; }
