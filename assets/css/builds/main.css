@@ -364,6 +364,7 @@ body {
   .col.col-sidebar {
     min-width: 300px;
     width: 20%;
+    overflow: hidden;
     box-shadow: 3px 0px 4px 0px #111B29;
     position: relative;
     z-index: 4; }
