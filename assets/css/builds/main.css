@@ -516,6 +516,23 @@ div.artist {
   .hover-submitoptin-btn:hover {
     background: #104265 !important; }
 
+.song-ui.playing {
+  color: #2BA7FF !important; }
+  .song-ui.playing span {
+    color: #2BA7FF !important; }
+  .song-ui.playing .timelineprogress-ui {
+    background: #2BA7FF; }
+
+.timeline-ui:hover {
+  cursor: pointer; }
+
+.timelineprogress-ui {
+  background: #5F708A;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0; }
+
 /* push header styles */
 .css-hidden-heading {
   height: 0;
