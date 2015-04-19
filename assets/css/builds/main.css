@@ -516,12 +516,20 @@ div.artist {
   .hover-submitoptin-btn:hover {
     background: #104265 !important; }
 
+.play-ui:hover {
+  cursor: pointer; }
+
+.svg-play-btn, .svg-pause-btn {
+  fill: #5F708A; }
+
 .song-ui.playing {
   color: #2BA7FF !important; }
   .song-ui.playing span {
     color: #2BA7FF !important; }
   .song-ui.playing .timelineprogress-ui {
     background: #2BA7FF; }
+  .song-ui.playing .svg-play-btn, .song-ui.playing .svg-pause-btn {
+    fill: #2BA7FF; }
 
 .timeline-ui:hover {
   cursor: pointer; }
