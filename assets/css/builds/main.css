@@ -343,8 +343,7 @@ body {
 
 .container {
   padding-top: 30px;
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 1600px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -509,6 +508,13 @@ div.artist {
       height: 12px;
       z-index: 3;
       cursor: pointer; }
+
+/* misc UI things that aren't easy with JSX inline styles */
+.hover-submitoptin-btn {
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s; }
+  .hover-submitoptin-btn:hover {
+    background: #104265 !important; }
 
 /* push header styles */
 .css-hidden-heading {
