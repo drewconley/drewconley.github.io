@@ -438,7 +438,7 @@ a.eventcard {
     margin-right: 0; }
   @media (max-width: 740px) {
     a.eventcard {
-      width: 49%; } }
+      width: 49.5%; } }
 
 .venue-box {
   /* dimensions: 815x315 ish */
