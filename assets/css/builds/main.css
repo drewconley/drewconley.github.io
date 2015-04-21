@@ -341,6 +341,10 @@ body {
   top: 0px;
   z-index: 10; }
 
+.site-wrap {
+  max-width: 1000px;
+  margin: 0 auto; }
+
 .container {
   padding-top: 30px;
   max-width: 1600px;
@@ -422,18 +426,17 @@ a.listing {
 a.eventcard {
   display: block;
   float: left;
-  width: 30%;
-  margin-right: 1em;
+  width: 32%;
+  margin-right: 2%;
   padding: 1em;
   color: #5F708A;
   text-decoration: none;
-  background: #243348; }
-  a.eventcard:not(:last-of-type) {
-    border-bottom: 4px solid #1F2C3E; }
-  a.eventcard.active {
-    color: #fff; }
+  background: #243348;
+  border-bottom: 4px solid #1F2C3E; }
   a.eventcard:hover:not(.active) {
     background: #1f2c3e; }
+  a.eventcard:nth-child(3n) {
+    margin-right: 0; }
 
 .venue-box {
   /* dimensions: 815x315 ish */
