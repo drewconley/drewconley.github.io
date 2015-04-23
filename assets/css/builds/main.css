@@ -454,12 +454,17 @@ a.eventcard {
   .venue-box:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     right: 0;
     width: 0;
     height: 0;
-    border-bottom: 150px solid #141C28;
+    border-bottom: 150px solid #0C1728;
     border-right: 2000px solid transparent; }
+
+section.artist-container {
+  background: #0C1728; }
+  section.artist-container:nth-child(even) {
+    background: #0E1B30; }
 
 div.artist {
   display: -webkit-box;
@@ -471,7 +476,9 @@ div.artist {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 3.2em 2em 1em; }
+  padding: 3.2em 2em 1em;
+  margin: 0 auto;
+  max-width: 670px; }
 
 .artist-avatar {
   min-width: 100px; }
