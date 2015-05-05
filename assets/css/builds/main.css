@@ -617,3 +617,25 @@ div.artist {
   /* Opera 12+ */
   animation: FadeIn 0.9 forwards;
   /* IE 10+, Fx 29+ */ }
+
+/* svg */
+.facebook-svg-icon {
+  fill: #3b5998;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s; }
+  .facebook-svg-icon:hover {
+    fill: #344f86; }
+
+.twitter-svg-icon {
+  fill: #55ACEE;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s; }
+  .twitter-svg-icon:hover {
+    fill: #3ea3ec; }
+
+.email-svg-icon {
+  fill: #f4452e;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s; }
+  .email-svg-icon:hover {
+    fill: #f3351f; }
