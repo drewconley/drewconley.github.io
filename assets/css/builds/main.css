@@ -427,16 +427,23 @@ a.listing {
   padding: 0 16px; }
 
 a.eventcard {
-  width: 32%; }
+  width: 32%;
+  margin-bottom: 23px;
+  background: #13253D;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s; }
   a.eventcard:nth-child(n) {
     margin-bottom: 2%;
     margin-right: 2%; }
   a.eventcard:nth-child(3n) {
     margin-right: 0;
     margin-bottom: 0; }
+  a.eventcard:hover {
+    background: #152a45; }
   @media (max-width: 900px) {
     a.eventcard {
-      width: 49%; }
+      width: 49%;
+      margin-bottom: 23px; }
       a.eventcard:nth-child(n) {
         margin-bottom: 2%;
         margin-right: 2%; }
@@ -445,13 +452,10 @@ a.eventcard {
         margin-bottom: 0; } }
   @media (max-width: 600px) {
     a.eventcard {
-      width: 100%; }
-      a.eventcard:nth-child(n) {
-        margin-bottom: 0%;
-        margin-right: 0%; }
-      a.eventcard:nth-child(1n) {
-        margin-right: 0;
-        margin-bottom: 0; } }
+      width: 100%;
+      margin-bottom: 3% !important; }
+      a.eventcard:nth-child(2n) {
+        margin-bottom: 3%; } }
 
 .venue-box {
   /* dimensions: 815x315 ish */
