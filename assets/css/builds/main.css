@@ -342,7 +342,7 @@ body {
   z-index: 10; }
 
 .site-wrap {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto; }
 
 .container {
@@ -423,14 +423,35 @@ a.listing {
   a.listing:hover:not(.active) {
     background: #1f2c3e; }
 
+.eventcards-container-wrap {
+  padding: 0 16px; }
+
 a.eventcard {
-  width: 32%;
-  margin-right: 2%; }
+  width: 32%; }
+  a.eventcard:nth-child(n) {
+    margin-bottom: 2%;
+    margin-right: 2%; }
   a.eventcard:nth-child(3n) {
-    margin-right: 0; }
-  @media (max-width: 740px) {
+    margin-right: 0;
+    margin-bottom: 0; }
+  @media (max-width: 900px) {
     a.eventcard {
-      width: 49.5%; } }
+      width: 49%; }
+      a.eventcard:nth-child(n) {
+        margin-bottom: 2%;
+        margin-right: 2%; }
+      a.eventcard:nth-child(2n) {
+        margin-right: 0;
+        margin-bottom: 0; } }
+  @media (max-width: 600px) {
+    a.eventcard {
+      width: 100%; }
+      a.eventcard:nth-child(n) {
+        margin-bottom: 0%;
+        margin-right: 0%; }
+      a.eventcard:nth-child(1n) {
+        margin-right: 0;
+        margin-bottom: 0; } }
 
 .venue-box {
   /* dimensions: 815x315 ish */
