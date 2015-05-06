@@ -639,3 +639,6 @@ div.artist {
   transition: fill 0.2s; }
   .email-svg-icon:hover {
     fill: #f3351f; }
+
+.youtube-svg-icon {
+  fill: #e52d27; }
