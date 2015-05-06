@@ -641,4 +641,9 @@ div.artist {
     fill: #f3351f; }
 
 .youtube-svg-icon {
-  fill: #e52d27; }
+  fill: #e52d27;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s; }
+
+a.video-thumb:hover .youtube-svg-icon {
+  fill: #cf1c19; }
