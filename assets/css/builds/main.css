@@ -334,7 +334,7 @@ body {
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700; }
+  font-weight: 400; }
 
 .site-wrap {
   max-width: 1100px;
@@ -342,7 +342,11 @@ body {
 
 /* site intro */
 .site-intro-section {
-  padding: 60px 0; }
+  padding: 60px 0;
+  background: -webkit-linear-gradient(rgba(9, 17, 30, 0.37), rgba(9, 17, 30, 0.37)), url('/assets/images/intro/stlouis.jpg');
+  background: linear-gradient(rgba(9, 17, 30, 0.37), rgba(9, 17, 30, 0.37)), url('/assets/images/intro/stlouis.jpg');
+  background-position: center top;
+  background-size: cover; }
 
 .container {
   padding-top: 30px;
