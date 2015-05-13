@@ -573,6 +573,9 @@ div.artist {
 .svg-play-btn, .svg-pause-btn {
   fill: #5F708A; }
 
+.pin-svg-fill-darkblue .gps-pin-svg-icon {
+  fill: #114E78; }
+
 .song-ui {
   max-width: 670px;
   margin: 0 auto; }
