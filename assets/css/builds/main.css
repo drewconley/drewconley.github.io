@@ -150,9 +150,7 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0; }
 
 /**
@@ -244,9 +242,7 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 input[type="checkbox"], input[type="radio"] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -267,8 +263,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -326,9 +320,7 @@ td, th {
 /* These will likely be JSX */
 /* colors, light (6) to dark (1) */
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 html, body, .app {
   height: 100%; }
@@ -337,8 +329,12 @@ body {
   color: #333333;
   font-size: 16px;
   background: #09111e;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   padding-top: 60px; }
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
 
 .site-wrap {
   max-width: 1100px;
@@ -354,11 +350,10 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   height: 100%;
-  -webkit-box-shadow: 1px 0px 9px 0px rgba(6, 16, 48, 0.4);
-          box-shadow: 1px 0px 9px 0px rgba(6, 16, 48, 0.4); }
+  box-shadow: 1px 0px 9px 0px rgba(6, 16, 48, 0.4); }
 
 .col {
   overflow: scroll;
@@ -368,37 +363,31 @@ body {
     min-width: 300px;
     width: 20%;
     overflow: hidden;
-    -webkit-box-shadow: 3px 0px 4px 0px #111B29;
-            box-shadow: 3px 0px 4px 0px #111B29;
+    box-shadow: 3px 0px 4px 0px #111B29;
     position: relative;
     z-index: 4; }
   .col.col-main {
     /* if width=="sidebar" */
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
 
 /* mobile layout */
 @media (max-width: 700px) {
+  /* --- Concept: Mobile display logic --- */
   .container {
     display: block; }
-
   .col.col-main, .col.col-sidebar {
     width: 100%; }
-
-  /* --- Concept: Mobile display logic --- */
   .col.col-sidebar {
     display: block; }
-
   .col.col-main {
     display: none; }
-
   body.eventDetailsPage .col.col-main {
     display: block; }
   body.eventDetailsPage .col.col-sidebar {
-    display: none; }
- }
+    display: none; } }
 
 /* Mobile-Only stuff */
 .mobile-only {
@@ -437,7 +426,7 @@ a.eventcard {
   margin-bottom: 23px;
   background: #13253D;
   -webkit-transition: background 0.2s;
-          transition: background 0.2s; }
+  transition: background 0.2s; }
   a.eventcard:nth-child(n) {
     margin-bottom: 2%;
     margin-right: 2%; }
@@ -468,8 +457,7 @@ a.eventcard {
   /* Update: design calls for 245px-ish height, but I'm changing it */
   background-position: center;
   height: 260px;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: none;
   position: relative;
   overflow: hidden;
@@ -498,8 +486,8 @@ div.artist {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding: 3.2em 2em 1em;
   margin: 0 auto;
   max-width: 670px; }
@@ -510,8 +498,8 @@ div.artist {
 .artist-description {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   margin-left: 46px;
   line-height: 1.5em;
   max-width: 570px;
@@ -564,7 +552,7 @@ div.artist {
 /* misc UI things that aren't easy with JSX inline styles */
 .hover-submitoptin-btn {
   -webkit-transition: background 0.2s;
-          transition: background 0.2s; }
+  transition: background 0.2s; }
   .hover-submitoptin-btn:hover {
     background: #104265 !important; }
 
@@ -629,28 +617,28 @@ div.artist {
 .facebook-svg-icon {
   fill: #3b5998;
   -webkit-transition: fill 0.2s;
-          transition: fill 0.2s; }
+  transition: fill 0.2s; }
   .facebook-svg-icon:hover {
-    fill: #344e86; }
+    fill: #344f86; }
 
 .twitter-svg-icon {
   fill: #55ACEE;
   -webkit-transition: fill 0.2s;
-          transition: fill 0.2s; }
+  transition: fill 0.2s; }
   .twitter-svg-icon:hover {
-    fill: #3ea1ec; }
+    fill: #3ea3ec; }
 
 .email-svg-icon {
   fill: #f4452e;
   -webkit-transition: fill 0.2s;
-          transition: fill 0.2s; }
+  transition: fill 0.2s; }
   .email-svg-icon:hover {
-    fill: #f3381f; }
+    fill: #f3351f; }
 
 .youtube-svg-icon {
   fill: #e52d27;
   -webkit-transition: fill 0.2s;
-          transition: fill 0.2s; }
+  transition: fill 0.2s; }
 
 a.video-thumb:hover .youtube-svg-icon {
-  fill: #cf1f19; }
+  fill: #cf1c19; }
