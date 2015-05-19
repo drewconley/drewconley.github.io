@@ -636,6 +636,16 @@ div.artist {
   display: table-cell;
   vertical-align: middle; }
 
+/* header CTA buttons and links */
+.header-signup-button {
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s; }
+  .header-signup-button:hover {
+    background: #0094f7 !important; }
+
+.hover-underline:hover {
+  text-decoration: underline !important; }
+
 /* svg */
 .facebook-svg-icon {
   fill: #3b5998;
