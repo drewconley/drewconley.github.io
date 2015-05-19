@@ -627,6 +627,11 @@ div.artist {
   animation: FadeIn 0.9 forwards;
   /* IE 10+, Fx 29+ */ }
 
+/* dropdown menu hover details */
+.dropdownmenu-link:hover {
+  background: #2BA7FF;
+  color: #fff !important; }
+
 /* svg */
 .facebook-svg-icon {
   fill: #3b5998;
