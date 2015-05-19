@@ -330,7 +330,7 @@ body {
   font-size: 16px;
   background: #09111e;
   font-family: 'Lato', sans-serif;
-  padding-top: 60px; }
+  padding-top: 46px; }
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -631,6 +631,10 @@ div.artist {
 .dropdownmenu-link:hover {
   background: #2BA7FF;
   color: #fff !important; }
+
+.inner-table-cell {
+  display: table-cell;
+  vertical-align: middle; }
 
 /* svg */
 .facebook-svg-icon {
