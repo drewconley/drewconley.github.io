@@ -407,6 +407,13 @@ body {
     .mobile-only {
       display: block; } }
 
+/* Hiding stuff on mobile */
+.hide-mobile {
+  display: block; }
+  @media (max-width: 700px) {
+    .hide-mobile {
+      display: none; } }
+
 .listing-group-heading {
   font-size: 0.9em;
   letter-spacing: 0.07em;
@@ -505,6 +512,8 @@ div.artist {
 
 .artist-avatar {
   min-width: 100px; }
+  .artist-avatar.mobile-only {
+    margin: 0 auto; }
 
 .artist-description {
   -webkit-box-flex: 1;
