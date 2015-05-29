@@ -474,7 +474,7 @@ a.eventcard {
   /* dimensions: 815x315 ish */
   /* Update: design calls for 245px-ish height, but I'm changing it */
   background-position: center;
-  height: 260px;
+  height: 360px;
   background-size: cover;
   background-repeat: none;
   position: relative;
