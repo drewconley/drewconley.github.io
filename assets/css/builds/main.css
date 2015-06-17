@@ -330,7 +330,7 @@ body {
   font-size: 16px;
   background: #09111e;
   font-family: 'Lato', sans-serif;
-  padding-top: 46px; }
+  /*padding-top:46px;*/ }
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -345,11 +345,21 @@ body {
 
 /* site intro */
 .site-intro-section {
-  padding: 60px 0;
-  background: -webkit-linear-gradient(rgba(9, 17, 30, 0.37), rgba(9, 17, 30, 0.37)), url('/assets/images/intro/stlouis.jpg');
-  background: linear-gradient(rgba(9, 17, 30, 0.37), rgba(9, 17, 30, 0.37)), url('/assets/images/intro/stlouis.jpg');
+  padding: 30px 0 60px;
+  background: -webkit-linear-gradient(rgba(26, 30, 36, 0.69), rgba(26, 30, 36, 0.69)), url('/assets/images/intro/stlouis.jpg');
+  background: linear-gradient(rgba(26, 30, 36, 0.69), rgba(26, 30, 36, 0.69)), url('/assets/images/intro/stlouis.jpg');
   background-position: center top;
   background-size: cover; }
+
+.site-intro-button {
+  color: #ECECEC;
+  text-decoration: none;
+  display: inline-block;
+  padding: 7px 1.4em 10px;
+  border-radius: 5px; }
+  .site-intro-button.blue {
+    color: #2BA7FF;
+    border: 1px solid #2BA7FF; }
 
 .container {
   padding-top: 30px;
